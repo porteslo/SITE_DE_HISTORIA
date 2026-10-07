@@ -1,0 +1,837 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Pesquisas Escolares - Heloisa Portes</title><style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6fb;
+    color: #20242b;
+    line-height: 1.7;
+}
+
+/* CABEÇALHO */
+
+header {
+    background: linear-gradient(135deg, #315bea, #673ab7);
+    color: white;
+    text-align: center;
+    padding: 70px 20px 60px;
+}
+
+header h1 {
+    font-size: 44px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.92;
+}
+
+/* MENU */
+
+nav {
+    background: white;
+    padding: 16px 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+nav a {
+    color: #315bea;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 9px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #673ab7;
+}
+
+/* CONTEÚDO */
+
+main {
+    max-width: 950px;
+    margin: 45px auto;
+    padding: 0 20px;
+}
+
+/* CADA PESQUISA */
+
+.pesquisa {
+    margin-bottom: 80px;
+    scroll-margin-top: 80px;
+}
+
+.titulo-pesquisa {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo-pesquisa h2 {
+    font-size: 36px;
+    color: #315bea;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.linha {
+    width: 80px;
+    height: 5px;
+    background: linear-gradient(90deg, #315bea, #673ab7);
+    border-radius: 10px;
+    margin: auto;
+}
+
+/* PERGUNTAS */
+
+.pergunta {
+    background: white;
+    padding: 30px;
+    margin-bottom: 32px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    border-left: 5px solid #315bea;
+}
+
+.pergunta h3 {
+    color: #315bea;
+    font-size: 21px;
+    margin-bottom: 16px;
+}
+
+.pergunta p {
+    font-size: 17px;
+    color: #424750;
+}
+
+/* RESUMO */
+
+.resumo {
+    background: linear-gradient(135deg, #eef2ff, #f4efff);
+    padding: 35px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid #dfe4ff;
+}
+
+.resumo h2 {
+    color: #315bea;
+    font-size: 27px;
+    margin-bottom: 18px;
+}
+
+.resumo p {
+    font-size: 17px;
+}
+
+/* SEPARADOR */
+
+.separador {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #cdd5f5, transparent);
+    margin: 70px 0;
+}
+
+/* FONTES */
+
+.fontes {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    scroll-margin-top: 80px;
+}
+
+.fontes h2 {
+    color: #315bea;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.fontes h3 {
+    color: #673ab7;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.fontes a {
+    display: block;
+    color: #315bea;
+    text-decoration: none;
+    margin: 9px 0;
+    word-break: break-word;
+}
+
+.fontes a:hover {
+    text-decoration: underline;
+}
+
+/* RODAPÉ */
+
+footer {
+    background: #171b27;
+    color: white;
+    text-align: center;
+    padding: 38px 20px;
+}
+
+footer .feito {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+footer .nome {
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 8px;
+    color: #b9c7ff;
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 55px 18px 45px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav a {
+        margin: 0 6px;
+        font-size: 13px;
+    }
+
+    main {
+        margin-top: 35px;
+        padding: 0 15px;
+    }
+
+    .titulo-pesquisa h2 {
+        font-size: 29px;
+    }
+
+    .pergunta {
+        padding: 23px;
+        margin-bottom: 27px;
+    }
+
+    .pergunta h3 {
+        font-size: 19px;
+    }
+
+    .pergunta p {
+        font-size: 16px;
+    }
+
+    .resumo {
+        padding: 25px;
+    }
+
+    .fontes {
+        padding: 25px;
+    }
+}
+
+</style></head><body><header><h1>Pesquisas Escolares</h1>
+
+<p>
+    Informação, conhecimento e conscientização
+</p>
+
+</header><nav><a href="#racial">Preconceito Racial</a>
+
+<a href="#religiosa">Intolerância Religiosa</a>
+
+<a href="#mulher">Violência contra a Mulher</a>
+
+<a href="#indicadores">Indicadores Sociais</a>
+
+<a href="#cultural">Preconceito Cultural</a>
+
+<a href="#fontes">Fontes</a>
+
+</nav><main><!-- ================================================= --><!-- PESQUISA 1 - PRECONCEITO RACIAL --><!-- ================================================= --><section class="pesquisa" id="racial"><div class="titulo-pesquisa">
+
+    <h2>Preconceito Racial</h2>
+
+    <div class="linha"></div>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>1. O que é preconceito racial?</h3>
+
+    <p>
+    Preconceito racial é o julgamento, tratamento desigual ou discriminação de uma pessoa ou grupo por causa de sua cor ou raça. Ele pode aparecer em atitudes, oportunidades e relações sociais. O Brasil possui uma população racialmente diversa. Segundo o Censo 2022, 45,3% da população se declarou parda e 10,2% se declarou preta.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>2. Quais são as principais causas do preconceito racial?</h3>
+
+    <p>
+    Entre as causas estão os estereótipos, a discriminação, a falta de conhecimento e as desigualdades construídas historicamente. A escravidão, que durou mais de três séculos no Brasil, também deixou consequências sociais e econômicas que ajudam a explicar parte das desigualdades existentes atualmente.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>3. Quais são os efeitos do preconceito racial?</h3>
+
+    <p>
+    O preconceito racial pode afetar o acesso à educação, ao trabalho, à renda, à segurança e a outros direitos. As desigualdades podem ser observadas por meio de diferentes indicadores sociais, mostrando que grupos raciais não possuem sempre as mesmas oportunidades.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>4. Como podemos combater o racismo?</h3>
+
+    <p>
+    O combate ao racismo envolve educação, respeito, valorização da história e da cultura negra, igualdade de oportunidades e denúncia de situações de discriminação. A escola, a família e a sociedade têm um papel importante na construção de relações baseadas no respeito.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>5. Qual é a importância da igualdade racial?</h3>
+
+    <p>
+    A igualdade racial é importante para garantir que todas as pessoas tenham as mesmas oportunidades e direitos, independentemente de sua cor ou raça. Em um país diverso como o Brasil, combater a discriminação contribui para uma sociedade mais justa, inclusiva e democrática.
+    </p>
+
+</div>
+
+
+<div class="resumo">
+
+    <h2>Resumo final</h2>
+
+    <p>
+    O preconceito racial é uma forma de discriminação que pode prejudicar oportunidades e direitos. Os dados do Censo 2022 mostram a diversidade racial do Brasil e também ajudam a compreender as desigualdades existentes. Combater o racismo depende de educação, respeito, igualdade de oportunidades e valorização da diversidade.
+    </p>
+
+</div>
+
+</section><div class="separador"></div><!-- ================================================= --><!-- PESQUISA 2 - INTOLERÂNCIA RELIGIOSA --><!-- ================================================= --><section class="pesquisa" id="religiosa"><div class="titulo-pesquisa">
+
+    <h2>Intolerância Religiosa</h2>
+
+    <div class="linha"></div>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>1. O que é intolerância religiosa?</h3>
+
+    <p>
+    Intolerância religiosa acontece quando uma pessoa ou grupo desrespeita, discrimina ou inferioriza alguém por causa de sua religião ou crença. Em 2024, foram registradas 2.472 denúncias de casos de intolerância religiosa pelo Disque 100, contra 1.481 em 2023.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>2. Quais são as principais causas da intolerância religiosa?</h3>
+
+    <p>
+    Entre as principais causas estão a falta de conhecimento sobre outras religiões, os estereótipos, o preconceito e a dificuldade de aceitar crenças diferentes. A falta de diálogo pode aumentar a intolerância e dificultar a convivência entre diferentes grupos religiosos.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>3. Quais são os tipos de intolerância religiosa?</h3>
+
+    <p>
+    A intolerância pode aparecer por meio de ofensas, discriminação, perseguição, ataques a símbolos ou locais religiosos e manifestações de preconceito na internet. As religiões de matriz africana estão entre as tradições que enfrentam situações de intolerância e racismo religioso.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>4. Quais são os efeitos da intolerância religiosa?</h3>
+
+    <p>
+    A intolerância religiosa pode causar exclusão social, constrangimento, medo, perda de oportunidades e dificuldades para que as pessoas expressem livremente sua fé. Ela também prejudica a convivência democrática e o direito à liberdade religiosa.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>5. Quais são os dados sobre intolerância religiosa no Brasil?</h3>
+
+    <p>
+    Segundo dados divulgados sobre o Disque 100, foram registradas 1.481 denúncias em 2023 e 2.472 em 2024. O aumento mostra a importância de fortalecer ações de prevenção, conscientização e combate à intolerância religiosa.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>6. Por que as religiões de matriz africana são importantes nesse debate?</h3>
+
+    <p>
+    As religiões de matriz africana fazem parte da diversidade cultural e religiosa brasileira. O Censo 2022 registrou pessoas que declararam pertencer à umbanda e ao candomblé. O respeito a essas religiões é fundamental para combater o racismo religioso e garantir a liberdade de crença.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>7. Como podemos combater a intolerância religiosa?</h3>
+
+    <p>
+    Podemos combater a intolerância por meio da educação, do diálogo, do respeito e do conhecimento sobre diferentes religiões. Situações de violência ou discriminação também podem ser denunciadas aos canais oficiais, como o Disque 100.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>8. Por que a liberdade religiosa é importante?</h3>
+
+    <p>
+    A liberdade religiosa é importante porque todas as pessoas devem ter o direito de escolher, praticar ou não praticar uma religião sem sofrer discriminação. Respeitar diferentes crenças ajuda a construir uma sociedade mais democrática, inclusiva e respeitosa.
+    </p>
+
+</div>
+
+
+<div class="resumo">
+
+    <h2>Resumo final</h2>
+
+    <p>
+    A intolerância religiosa desrespeita a liberdade de crença e pode causar discriminação e exclusão. Os dados do Disque 100 mostram a existência de milhares de denúncias no Brasil. Combater esse problema exige educação, diálogo, respeito às diferentes religiões e proteção dos direitos de todas as pessoas.
+    </p>
+
+</div>
+
+</section><div class="separador"></div><!-- ================================================= --><!-- PESQUISA 3 - VIOLÊNCIA CONTRA A MULHER --><!-- ================================================= --><section class="pesquisa" id="mulher"><div class="titulo-pesquisa">
+
+    <h2>Violência contra a Mulher</h2>
+
+    <div class="linha"></div>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>1. O que é violência contra a mulher?</h3>
+
+    <p>
+    Violência contra a mulher é qualquer ação que cause dano ou sofrimento físico, psicológico, sexual, patrimonial ou moral. A Lei Maria da Penha, Lei nº 11.340/2006, criou mecanismos para prevenir e combater a violência doméstica e familiar. Em 2024, o Ligue 180 registrou 573.131 violações de direitos das mulheres.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>2. Quais são os tipos de violência contra a mulher?</h3>
+
+    <p>
+    Os principais tipos incluem violência psicológica, física, patrimonial, sexual e moral. Em 2024, entre as violações registradas pelo Ligue 180, foram 101.007 casos de violência psicológica, 78.651 de violência física, 19.095 patrimoniais, 10.203 sexuais e 9.180 morais. Uma mesma denúncia pode apresentar mais de um tipo de violação.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>3. Quais são algumas causas da violência contra a mulher?</h3>
+
+    <p>
+    Entre os fatores relacionados estão desigualdades de gênero, relações de controle, comportamentos abusivos e normas culturais que podem naturalizar a violência. Em 2024, o Ligue 180 registrou 17.915 denúncias envolvendo companheiros atuais e 17.083 envolvendo ex-companheiros.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>4. Quais são as consequências da violência contra a mulher?</h3>
+
+    <p>
+    A violência pode causar consequências físicas, psicológicas, sociais e econômicas. O feminicídio representa uma das formas mais graves de violência contra mulheres. Segundo dados do Anuário Brasileiro de Segurança Pública, foram registrados 1.492 feminicídios em 2024.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>5. Quais são os dados sobre violência contra a mulher?</h3>
+
+    <p>
+    Os dados mostram a dimensão do problema no Brasil. Em 2024, foram registrados 1.492 feminicídios e 3.870 tentativas de feminicídio, segundo dados do Fórum Brasileiro de Segurança Pública. Também foram registrados diferentes crimes e formas de violência contra mulheres, mostrando a necessidade de prevenção e proteção.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>6. Como podemos combater a violência contra a mulher?</h3>
+
+    <p>
+    O combate envolve educação, prevenção, apoio às vítimas, aplicação das leis, medidas protetivas e acesso aos serviços de atendimento. O Ligue 180 é gratuito, funciona 24 horas por dia e recebe denúncias e orienta mulheres sobre seus direitos e serviços de apoio.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>7. Quais leis protegem as mulheres?</h3>
+
+    <p>
+    A Lei Maria da Penha é uma das principais leis brasileiras de proteção às mulheres contra a violência doméstica e familiar. Em 2024, a Lei nº 14.994 tornou o feminicídio um crime autônomo e aumentou sua pena. As medidas protetivas também podem ser utilizadas para aumentar a proteção das vítimas.
+    </p>
+
+</div>
+
+
+<div class="resumo">
+
+    <h2>Resumo final</h2>
+
+    <p>
+    A violência contra a mulher é um grave problema social que pode assumir diferentes formas. Os números do Ligue 180 e os dados de segurança pública mostram que milhares de mulheres são afetadas todos os anos. A prevenção, a educação, o apoio às vítimas e a aplicação das leis são fundamentais para enfrentar esse problema.
+    </p>
+
+</div>
+
+</section><div class="separador"></div><!-- ================================================= --><!-- PESQUISA 4 - INDICADORES SOCIAIS --><!-- ================================================= --><section class="pesquisa" id="indicadores"><div class="titulo-pesquisa">
+
+    <h2>Indicadores Sociais</h2>
+
+    <div class="linha"></div>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>1. O que são indicadores sociais?</h3>
+
+    <p>
+    Indicadores sociais são dados estatísticos usados para mostrar como vive uma população. Eles ajudam a analisar aspectos como educação, saúde, renda, emprego, moradia e pobreza. Com esses números, é possível identificar problemas sociais e comparar diferentes regiões e grupos da população.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>2. Quais são os principais indicadores sociais?</h3>
+
+    <p>
+    Entre os principais estão taxa de escolarização, taxa de analfabetismo, renda, desemprego, expectativa de vida, mortalidade infantil, pobreza e condições de moradia. Em 2025, a taxa de escolarização das pessoas de 6 a 14 anos foi de 99,5%, enquanto a taxa de analfabetismo das pessoas com 15 anos ou mais foi de 4,9%.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>3. Como os indicadores sociais ajudam a conhecer a qualidade de vida?</h3>
+
+    <p>
+    Eles permitem transformar diferentes aspectos da vida da população em números que podem ser analisados. Por exemplo, uma região com maior escolarização, melhores condições de moradia, maior renda e menor mortalidade tende a apresentar melhores condições de vida. A taxa de analfabetismo caiu de 6,7% em 2016 para 5,3% em 2024.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>4. Quais são os principais indicadores sociais relacionados à educação?</h3>
+
+    <p>
+    Os principais são a taxa de escolarização, taxa de analfabetismo, frequência escolar e nível de escolaridade da população. Em 2024, o Brasil tinha 5,3% de analfabetismo entre pessoas de 15 anos ou mais, o equivalente a aproximadamente 9,1 milhões de pessoas. Entre as pessoas com 60 anos ou mais, a taxa era de 14,9%.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>5. Como a renda influencia a qualidade de vida?</h3>
+
+    <p>
+    A renda influencia o acesso a alimentos, moradia, educação, transporte, saúde e outros serviços. Quanto menor a renda de uma família, maiores podem ser as dificuldades para atender às necessidades básicas. Entre 2023 e 2024, cerca de 8,6 milhões de pessoas saíram da pobreza no Brasil, e a proporção da população nessa situação caiu de 27,3% para 23,1%.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>6. Por que a expectativa de vida é um indicador social importante?</h3>
+
+    <p>
+    A expectativa de vida indica, em média, quantos anos uma pessoa pode viver considerando as condições de mortalidade de uma população. Ela ajuda a avaliar as condições de saúde e de vida de um país. Outros indicadores, como a mortalidade infantil, também ajudam nessa análise.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>7. Como os indicadores sociais podem mostrar as desigualdades existentes no Brasil?</h3>
+
+    <p>
+    Os indicadores permitem comparar diferentes regiões e grupos da população. Em 2024, a taxa de analfabetismo nacional era de 5,3%, enquanto no Nordeste chegava a 11,1%, mais que o dobro da média brasileira. Esses números mostram como os indicadores sociais ajudam a identificar desigualdades dentro do país.
+    </p>
+
+</div>
+
+
+<div class="resumo">
+
+    <h2>Resumo final</h2>
+
+    <p>
+    Os indicadores sociais são importantes porque transformam diferentes aspectos da vida da população em dados que podem ser analisados. Eles ajudam a identificar avanços e problemas em áreas como educação, renda, saúde e pobreza, além de revelar desigualdades entre regiões e grupos da população.
+    </p>
+
+</div>
+
+</section><div class="separador"></div><!-- ================================================= --><!-- PESQUISA 5 - PRECONCEITO CULTURAL --><!-- ================================================= --><section class="pesquisa" id="cultural"><div class="titulo-pesquisa">
+
+    <h2>Preconceito Cultural</h2>
+
+    <div class="linha"></div>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>1. O que é preconceito cultural?</h3>
+
+    <p>
+    Preconceito cultural acontece quando uma pessoa ou grupo é julgado, desrespeitado ou tratado de forma inferior por causa de sua cultura, costumes, língua, tradições ou religião. O Brasil possui grande diversidade cultural e religiosa. O Censo 2022 registrou diferentes grupos religiosos entre a população de 10 anos ou mais.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>2. Quais são as principais causas do preconceito cultural?</h3>
+
+    <p>
+    Entre as causas estão a falta de conhecimento sobre outras culturas, estereótipos, intolerância e dificuldade em aceitar costumes diferentes. Conhecer as diferenças culturais e religiosas ajuda a combater ideias preconceituosas e favorece a convivência respeitosa.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>3. Quais são os tipos de preconceito cultural?</h3>
+
+    <p>
+    O preconceito cultural pode aparecer como intolerância religiosa, preconceito contra costumes e tradições, discriminação por língua ou sotaque e desvalorização de determinados grupos culturais. Um exemplo é a intolerância contra religiões de matriz africana.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>4. Como o preconceito cultural afeta as pessoas?</h3>
+
+    <p>
+    Ele pode causar exclusão social, constrangimento, perda de oportunidades e dificuldade para as pessoas expressarem livremente sua cultura e suas tradições. Pesquisas do IBGE também mostram que religião ou crença pode aparecer entre os motivos relatados de discriminação em serviços de saúde.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>5. Quais são os dados sobre preconceito cultural no Brasil?</h3>
+
+    <p>
+    Não existe um único número que represente todo o preconceito cultural no Brasil, porque ele envolve diferentes situações. Porém, os dados do Censo 2022 mostram a grande diversidade cultural e religiosa do país, incluindo pessoas sem religião e pessoas pertencentes a diferentes tradições religiosas.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>6. Como podemos combater o preconceito cultural?</h3>
+
+    <p>
+    Podemos combater o preconceito por meio da educação, respeito, diálogo e valorização das diferentes culturas. É importante conhecer a história e os costumes de diferentes povos e evitar julgamentos baseados em estereótipos.
+    </p>
+
+</div>
+
+
+<div class="pergunta">
+
+    <h3>7. Qual é a importância de respeitar diferentes culturas?</h3>
+
+    <p>
+    Respeitar diferentes culturas é importante porque o Brasil possui uma população muito diversa. Reconhecer essa diversidade ajuda a promover igualdade, respeito e convivência entre diferentes grupos. Os dados do Censo 2022 mostram essa variedade religiosa e cultural existente no país.
+    </p>
+
+</div>
+
+
+<div class="resumo">
+
+    <h2>Resumo final</h2>
+
+    <p>
+    O preconceito cultural acontece quando diferenças de cultura, costumes, tradições, língua ou religião são usadas para inferiorizar ou discriminar pessoas. O Brasil possui grande diversidade cultural e religiosa, por isso o respeito às diferenças é fundamental. Educação, diálogo e valorização da diversidade são importantes para construir uma sociedade mais inclusiva.
+    </p>
+
+</div>
+
+</section><!-- ================================================= --><!-- FONTES --><!-- ================================================= --><section class="fontes" id="fontes"><h2>📚 Fontes das pesquisas</h2>
+
+
+<h3>Preconceito racial</h3>
+
+<a href="https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html" target="_blank">
+    • IBGE — Censo Demográfico 2022
+</a>
+
+<a href="https://educa.ibge.gov.br/criancas/brasil/2848-nosso-povo/23072-um-brasil-preto-e-pardo.html" target="_blank">
+    • IBGE Educa — Um Brasil preto e pardo
+</a>
+
+
+<h3>Intolerância religiosa</h3>
+
+<a href="https://sidra.ibge.gov.br/pesquisa/censo-demografico/demografico-2022/amostra-religioes" target="_blank">
+    • IBGE SIDRA — Censo 2022: Religiões
+</a>
+
+<a href="https://www.tce.rn.gov.br/as/PlanoEstrategico/Sustentabilidade/Cartilha.pdf" target="_blank">
+    • Tribunal de Contas do Estado do Rio Grande do Norte — Cartilha sobre intolerância religiosa
+</a>
+
+<a href="https://www.gov.br/igualdaderacial/pt-br/assuntos/programas-e-projetos/politica-nacional-para-povos-e-comunidades-tradicionais-de-terreiro-e-matriz-africana/politica-nacional-para-povos-e-comunidades-tradicionais-de-terreiro-e-matriz-africana" target="_blank">
+    • Ministério da Igualdade Racial — Povos e comunidades tradicionais de terreiro e matriz africana
+</a>
+
+
+<h3>Violência contra a mulher</h3>
+
+<a href="https://www.gov.br/mulheres/pt-br/central-de-conteudos/noticias/2025/fevereiro/ligue-180-realiza-mais-de-2-mil-atendimentos-por-dia-em-2024" target="_blank">
+    • Ministério das Mulheres — Dados do Ligue 180 em 2024
+</a>
+
+<a href="https://www.gov.br/mulheres/pt-br/ligue180" target="_blank">
+    • Governo Federal — Central Ligue 180
+</a>
+
+<a href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11340.htm" target="_blank">
+    • Planalto — Lei Maria da Penha
+</a>
+
+<a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14994.htm" target="_blank">
+    • Planalto — Lei nº 14.994/2024
+</a>
+
+
+<h3>Indicadores sociais</h3>
+
+<a href="https://www.ibge.gov.br/estatisticas/sociais/populacao/9221-sintese-de-indicadores-sociais.html" target="_blank">
+    • IBGE — Síntese de Indicadores Sociais
+</a>
+
+<a href="https://educa.ibge.gov.br/jovens/materias-especiais/23113-a-educacao-no-brasil-entre-metas-e-desigualdades.html" target="_blank">
+    • IBGE Educa — Educação no Brasil: entre metas e desigualdades
+</a>
+
+<a href="https://educa.ibge.gov.br/jovens/materias-especiais/23114-sintese-de-indicadores-sociais-trabalho-padrao-de-vida-e-distribuicao-de-rendimentos-no-brasil.html" target="_blank">
+    • IBGE Educa — Trabalho, padrão de vida e distribuição de rendimentos
+</a>
+
+
+<h3>Preconceito cultural</h3>
+
+<a href="https://sidra.ibge.gov.br/pesquisa/censo-demografico/demografico-2022/amostra-religioes" target="_blank">
+    • IBGE SIDRA — Religiões no Censo 2022
+</a>
+
+<a href="https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html" target="_blank">
+    • IBGE — Censo Demográfico 2022
+</a>
+
+<a href="https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/10138-pns-2013-tres-em-cada-quatro-brasileiros-costumam-buscar-atendimento-medico-na-rede-publica-de-saude" target="_blank">
+    • IBGE — Pesquisa Nacional de Saúde
+</a>
+
+</section></main><footer><div class="feito">
+    Feito por
+</div>
+
+<div class="nome">
+    Heloisa Portes
+</div>
+
+</footer></body>
+</html>
